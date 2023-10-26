@@ -13,6 +13,8 @@ import CreateListing from './pages/CreateListing';
 import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
+import Terms from './pages/Terms';
+import Copyright from './pages/Copyright';
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
           </Route>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/copyright" element={<Copyright />} />
         </Routes>
       </Suspense>
       <Footer />

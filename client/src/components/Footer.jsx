@@ -1,5 +1,6 @@
 import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
-import { logoFooter,copyRight } from '../assets/icons';
+import { logoFooter, copyRight } from '../assets/icons';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <section className="bg-[#062C4F]">
@@ -52,13 +53,13 @@ const Footer = () => {
               height={18}
               className="rounded-full m-0"
             />
-            <p className="font-poppins text-sm">
+            <Link to={"/copyright"} className="font-poppins text-sm">
               Copyright. All rights reserved.
-            </p>
+            </Link>
           </div>
-          <p className="font-poppins text-sm cursor-pointer">
+          <Link to={"/terms"} className="font-poppins text-sm cursor-pointer">
             Terms & Conditions
-          </p>
+          </Link>
         </div>
       </footer>
     </section>
