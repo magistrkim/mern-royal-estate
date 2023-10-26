@@ -12,7 +12,7 @@ const ListingCard = ({ listing }) => {
   return (
     <div
       className="bg-white shadow-lg hover:shadow-2xl transition-shadow
-     overflow-hidden rounded-lg w-full sm:w-[310px]"
+     overflow-hidden rounded-lg w-full md:w-[310px]"
     >
       <Link to={`/listing/${listing._id}`}>
         <img

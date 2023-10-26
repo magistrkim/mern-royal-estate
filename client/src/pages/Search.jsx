@@ -234,7 +234,7 @@ const Search = () => {
             </button>
           </form>
         </div>
-        <div className="p-7 w-full">
+        <div className="py-7 sm:p-7 w-full">
           <h2
             className="text-3xl text-secondary font-semibold 
         mb-4 font-roboto uppercase max-sm:text-center"
