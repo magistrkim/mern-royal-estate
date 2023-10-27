@@ -70,6 +70,7 @@ const Listing = () => {
                     height: '600px',
                     background: 'center',
                   }}
+                  loading="lazy"
                 />
               </SwiperSlide>
             ))}

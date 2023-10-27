@@ -63,6 +63,7 @@ const Home = () => {
                   height: '480px',
                   zIndex: 10,
                 }}
+                loading="lazy"
               />
             </SwiperSlide>
           ))}
