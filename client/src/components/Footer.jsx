@@ -10,7 +10,7 @@ const Footer = () => {
       max-lg:flex-col"
         >
           <div className="flex flex-col items-start ">
-            <a href="/">
+            <a href="/" aria-label="footer logo">
               <img src={logoFooter} alt="logo" width={100} height={60} />
             </a>
             <p className="mt-6 text-base leading-7 text-white-400 font-poppins sm:max-w-sm">
@@ -20,7 +20,10 @@ const Footer = () => {
               <ul className="flex justify-center items-center gap-4">
                 <li>
                   {' '}
-                  <a href="https://github.com/magistrkim" aria-label="Instagram">
+                  <a
+                    href="https://github.com/magistrkim"
+                    aria-label="Instagram"
+                  >
                     <FaInstagramSquare className="w-12 h-12 text-white hover:text-slate-300" />
                   </a>
                 </li>
@@ -39,19 +42,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-1 flex-wrap lg:gap-10 gap-20 justify-between">
-            <div>
-              <h4 className="text-white font-poppins text-2xl leading-normal font-medium mb-6"></h4>
-              <ul>
-                <li
-                  className="text-white-400 font-poppins text-base 
-                    leading-normal mt-3 hover:text-slate-gray cursor-pointer"
-                >
-                  <a href="#products"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
         <div className="flex justify-between mt-24 text-white-400 max-sm:flex-col max-sm:items-center">
           <div className="flex flex-1 justify-start items-center gap-2 font-roboto cursor-pointer">
@@ -62,11 +52,19 @@ const Footer = () => {
               height={18}
               className="rounded-full m-0"
             />
-            <Link to={'/copyright'} className="font-poppins text-sm">
+            <Link
+              to={'/copyright'}
+              className="font-poppins text-sm"
+              aria-label="copyright"
+            >
               Copyright. All rights reserved.
             </Link>
           </div>
-          <Link to={'/terms'} className="font-poppins text-sm cursor-pointer">
+          <Link
+            to={'/terms'}
+            className="font-poppins text-sm cursor-pointer"
+            aria-label="terms and conditions"
+          >
             Terms & Conditions
           </Link>
         </div>

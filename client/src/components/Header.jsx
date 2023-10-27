@@ -34,7 +34,7 @@ const Header = () => {
     <section className="bg-slate-300  shadow-md">
       <header className="max-container py-1 padding-x mx-auto">
         <div className="flex justify-between gap-4 items-center">
-          <a href="/" aria-label="Logo">
+          <a href="/" aria-label="header logo">
             <img src={logo} alt="royal estate logo" width={100} height={60} />
           </a>
           <form
@@ -77,9 +77,9 @@ const Header = () => {
                       className="rounded-full object-cover w-10 h-10 "
                     />
                   ) : (
-                    <li className="uppercase navlink" to="/signin">
+                    <p className="uppercase navlink" to="/signin">
                       Sign In
-                    </li>
+                    </p>
                   )}
                 </Link>
               </li>
