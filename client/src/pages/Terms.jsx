@@ -1,6 +1,6 @@
 const Terms = () => {
   return (
-    <section className="bg-slate-100 py-4 md:py-12">
+    <section id="terms" className="bg-slate-100 py-4 md:py-12">
       <div className="max-container padding-x">
         <div className="flex flex-col gap-2 sm:gap-4 pt-2 max-w-full sm:max-w-[680px]">
           <h2 className="text-secondary font-bold font-poppins uppercase text-2xl">

@@ -349,6 +349,7 @@ const CreateListing = () => {
                     className="w-40 h-24 object-cover rounded-md"
                   />
                   <button
+                    aria-label="delete"
                     onClick={() => handleDeleteImage(index)}
                     type="button"
                     className="bg-red-600 text-white rounded-md text-sm uppercase 
@@ -359,6 +360,7 @@ const CreateListing = () => {
                 </div>
               ))}
             <button
+              aria-label="create"
               disabled={loading || uploading}
               className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60"

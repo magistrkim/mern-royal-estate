@@ -47,6 +47,7 @@ const Contacts = ({ listing }) => {
             rounded-md mt-2 mb-4 p-2 outline-none font-roboto text-lg"
           ></textarea>
           <Link
+            aria-label="contact landlord"
             to={`mailto:${landlord.email}?subject=Regarding ${listing.name}&body=${message}`}
             className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60 text-center"

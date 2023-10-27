@@ -255,6 +255,7 @@ const Search = () => {
               ))}
             {showMore && (
               <button
+                aria-label="show more"
                 onClick={onShowMoreClick}
                 className="bg-green-900 w-full max-w-[200px] m-auto hover:bg-green-700
                  text-white text-center p-1 rounded-md font-roboto"

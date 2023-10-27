@@ -37,6 +37,7 @@ const OAuth = () => {
   };
   return (
     <button
+      aria-label="Google authorization"
       onClick={handleGoogleClick}
       type="button"
       disabled={loading}

@@ -34,7 +34,7 @@ const Header = () => {
     <section className="bg-slate-300  shadow-md">
       <header className="max-container py-1 padding-x mx-auto">
         <div className="flex justify-between gap-4 items-center">
-          <a href="/">
+          <a href="/" aria-label="Logo">
             <img src={logo} alt="royal estate logo" width={100} height={60} />
           </a>
           <form
@@ -48,31 +48,41 @@ const Header = () => {
               placeholder="Search..."
               className="bg-transparent info-text focus:outline-none w-full md:min-w-[320px]"
             />
-            <button>
+            <button aria-label="search">
               <FaSistrix className="text-primary w-[20px] h-[20px] cursor-pointer" />
             </button>
           </form>
           <nav>
             <ul className="flex items-center gap-6 max-md:hidden">
-              <Link to="/">
-                <li className="uppercase navlink">Home</li>
-              </Link>
-              <Link to="/about">
-                <li className="uppercase navlink">About</li>
-              </Link>
-              <Link to="/profile">
-                {currentUser ? (
-                  <img
-                    src={currentUser.avatar}
-                    alt="profile image"
-                    className="rounded-full object-cover w-10 h-10 "
-                  />
-                ) : (
-                  <li className="uppercase navlink" to="/signin">
-                    Sign In
-                  </li>
-                )}
-              </Link>
+              <li>
+                <Link to="/" className="uppercase navlink" aria-label="Home">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="uppercase navlink"
+                  aria-label="About"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/profile" aria-label="signin">
+                  {currentUser ? (
+                    <img
+                      src={currentUser.avatar}
+                      alt="profile image"
+                      className="rounded-full object-cover w-10 h-10 "
+                    />
+                  ) : (
+                    <li className="uppercase navlink" to="/signin">
+                      Sign In
+                    </li>
+                  )}
+                </Link>
+              </li>
             </ul>
             <div className="hidden max-md:block ml-4 ">
               <img
@@ -94,6 +104,7 @@ const Header = () => {
                   {navLinks.map(item => (
                     <li key={item.label}>
                       <Link
+                        aria-label="mobile menu"
                         to={item.href}
                         className={`font-montserrat leading-normal text-xl
                      text-white font-semibold hover:text-accent uppercase cursor-pointer ${

@@ -173,6 +173,7 @@ const Profile = () => {
             hidden
           />
           <img
+            aria-label="profile image"
             onClick={() => fileRef.current.click()}
             src={formData.avatar || currentUser.avatar}
             alt="profile image"
@@ -217,6 +218,7 @@ const Profile = () => {
             onChange={handleChange}
           />
           <button
+            aria-label="update"
             disabled={loading}
             className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60"
@@ -224,6 +226,7 @@ const Profile = () => {
             {loading ? 'Loading...' : ' Update'}
           </button>
           <Link
+            aria-label="create listing"
             to={'/create-listing'}
             className="bg-green-700 text-white text-center rounded-md uppercase 
           font-poppins p-3 hover:bg-green-900 disabled:opacity-60"
@@ -246,6 +249,7 @@ const Profile = () => {
           </p>
         </div>
         <button
+          aria-label="show listings"
           onClick={handleShowListings}
           className="text-green-700 font-roboto w-full"
         >
@@ -263,20 +267,25 @@ const Profile = () => {
                 className="flex justify-between p-3 border border-gray-300 items-center
               gap-4 rounded-md"
               >
-                <Link to={`/listing/${listing._id}`}>
+                <Link to={`/listing/${listing._id}`} aria-label="listing image">
                   <img
                     src={listing.imageUrls[0]}
                     alt="listing cover"
                     className="w-24 h-16 object-contain"
                   />
                 </Link>
-                <Link className="flex-1" to={`/listing/${listing._id}`}>
+                <Link
+                  className="flex-1"
+                  to={`/listing/${listing._id}`}
+                  aria-label="listing name"
+                >
                   <p className="font-poppins text-primary font-semibold hover:text-green-700">
                     {listing.name}
                   </p>
                 </Link>
                 <div className="flex flex-col gap-2">
                   <button
+                    aria-label="delete"
                     onClick={() => handleDeleteListing(listing._id)}
                     className="text-red-700  uppercase 
           font-poppins p-1  hover:opacity-40"
@@ -285,6 +294,7 @@ const Profile = () => {
                   </button>
                   <Link to={`/update-listing/${listing._id}`}>
                     <button
+                      aria-label="edit"
                       className="text-primary uppercase 
           font-poppins p-1 hover:opacity-40"
                     >

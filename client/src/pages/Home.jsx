@@ -77,6 +77,7 @@ const Home = () => {
           </p>
           <Link to={'/search'}>
             <button
+              aria-label="search listing"
               className="bg-red-800 text-white rounded-md uppercase 
           font-poppins p-2 sm:p-3 hover:bg-primary"
             >
@@ -95,6 +96,7 @@ const Home = () => {
                   Recent offers
                 </h2>
                 <Link
+                  aria-label="show more"
                   className="text-lg text-green-700 font-semibold 
        font-roboto hover:underline"
                   to={'/search?offer=true'}
@@ -119,6 +121,7 @@ const Home = () => {
                   Recent estate for rent
                 </h2>
                 <Link
+                  aria-label="show more"
                   className="text-lg text-green-700 font-semibold 
        font-roboto hover:underline"
                   to={'/search?type=rent'}
@@ -143,6 +146,7 @@ const Home = () => {
                   Recent estate for sale
                 </h2>
                 <Link
+                  aria-label="show more"
                   className="text-lg text-green-700 font-semibold 
        font-roboto hover:underline"
                   to={'/search?type=sale'}

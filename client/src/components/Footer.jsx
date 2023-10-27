@@ -17,17 +17,26 @@ const Footer = () => {
               Find Your perfect House with Royal Estate. Follow us!
             </p>
             <div className="flex items-center gap-5 mt-8">
-              <div className="flex justify-center items-center gap-4">
-                <a href="https://github.com/magistrkim">
-                  <FaInstagramSquare className="w-12 h-12 text-white hover:text-slate-300" />
-                </a>
-                <a href="https://github.com/magistrkim">
-                  <FaLinkedin className="w-12 h-12 text-white hover:text-slate-300" />
-                </a>
-                <a href="https://github.com/magistrkim">
-                  <FaGithubSquare className="w-12 h-12 text-white hover:text-slate-300" />
-                </a>
-              </div>
+              <ul className="flex justify-center items-center gap-4">
+                <li>
+                  {' '}
+                  <a href="https://github.com/magistrkim" aria-label="Instagram">
+                    <FaInstagramSquare className="w-12 h-12 text-white hover:text-slate-300" />
+                  </a>
+                </li>
+                <li>
+                  {' '}
+                  <a href="https://github.com/magistrkim" aria-label="LinkedIn">
+                    <FaLinkedin className="w-12 h-12 text-white hover:text-slate-300" />
+                  </a>
+                </li>
+                <li>
+                  {' '}
+                  <a href="https://github.com/magistrkim" aria-label="GitHub">
+                    <FaGithubSquare className="w-12 h-12 text-white hover:text-slate-300" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="flex flex-1 flex-wrap lg:gap-10 gap-20 justify-between">
@@ -53,11 +62,11 @@ const Footer = () => {
               height={18}
               className="rounded-full m-0"
             />
-            <Link to={"/copyright"} className="font-poppins text-sm">
+            <Link to={'/copyright'} className="font-poppins text-sm">
               Copyright. All rights reserved.
             </Link>
           </div>
-          <Link to={"/terms"} className="font-poppins text-sm cursor-pointer">
+          <Link to={'/terms'} className="font-poppins text-sm cursor-pointer">
             Terms & Conditions
           </Link>
         </div>

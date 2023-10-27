@@ -72,6 +72,7 @@ const Signin = () => {
             onChange={handleChange}
           />
           <button
+            aria-label="sign in"
             disabled={loading}
             className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60"
@@ -84,7 +85,7 @@ const Signin = () => {
           <p className="text-secondary font-roboto">
             Do not have an account yet?
           </p>
-          <Link to={'/signup'}>
+          <Link to={'/signup'} aria-label="signup">
             <span className="text-primary underline font-roboto">Sign up</span>
           </Link>
         </div>

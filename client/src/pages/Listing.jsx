@@ -76,6 +76,7 @@ const Listing = () => {
            bg-slate-100 cursor-pointer"
           >
             <FaShare
+              aria-label="share link"
               className="text-slate-500"
               onClick={() => {
                 navigator.clipboard.writeText(window.location.href);
@@ -149,6 +150,7 @@ const Listing = () => {
               listing.userRef !== currentUser._id &&
               !contacts && (
                 <button
+                  aria-label="contact landlord"
                   onClick={() => setContacts(true)}
                   className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60"

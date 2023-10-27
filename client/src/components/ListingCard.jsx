@@ -14,7 +14,7 @@ const ListingCard = ({ listing }) => {
       className="bg-white shadow-lg hover:shadow-2xl transition-shadow
      overflow-hidden rounded-lg w-full md:w-[310px]"
     >
-      <Link to={`/listing/${listing._id}`}>
+      <Link to={`/listing/${listing._id}`} aria-label="Listing card">
         <img
           src={listing.imageUrls[0]}
           alt="listing image"

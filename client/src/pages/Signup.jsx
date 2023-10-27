@@ -73,6 +73,7 @@ const Signup = () => {
             onChange={handleChange}
           />
           <button
+            aria-label="sign up"
             disabled={loading}
             className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60"
@@ -83,7 +84,7 @@ const Signup = () => {
         </form>
         <div className="flex gap-2 items-baseline">
           <p className="text-secondary font-roboto">Have an account?</p>
-          <Link to={'/signin'}>
+          <Link to={'/signin'} aria-label="sign in">
             <span className="text-primary underline font-roboto">Sign in</span>
           </Link>
         </div>

@@ -340,6 +340,7 @@ const UpdateListing = () => {
                 className="p-3 border border-gray-300 rounded w-full font-poppins"
               />
               <button
+                aria-label="upload"
                 type="button"
                 disabled={uploading}
                 onClick={handleImageSubmit}
@@ -364,6 +365,7 @@ const UpdateListing = () => {
                     className="w-40 h-24 object-cover rounded-md"
                   />
                   <button
+                    aria-label="delete"
                     onClick={() => handleDeleteImage(index)}
                     type="button"
                     className="bg-red-600 text-white rounded-md text-sm uppercase 
@@ -374,6 +376,7 @@ const UpdateListing = () => {
                 </div>
               ))}
             <button
+              aria-label="update listing"
               disabled={loading || uploading}
               className="bg-slate-800 text-white rounded-md uppercase 
           font-poppins p-3 hover:bg-primary disabled:opacity-60"

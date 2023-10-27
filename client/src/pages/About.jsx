@@ -23,8 +23,9 @@ const About = () => {
             real estate aspirations become our shared mission.
           </p>
         </div>
-        <Link to={'/search'}>
+        <Link to={'/search'} aria-label="to search">
           <button
+            aria-label="listing"
             className="bg-red-800 text-white rounded-md uppercase 
           font-poppins p-2 sm:p-3 hover:bg-primary"
           >

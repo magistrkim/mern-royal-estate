@@ -1,6 +1,6 @@
 const Copyright = () => {
   return (
-    <section className="bg-slate-100 py-4 md:py-12">
+    <section id="copyright" className="bg-slate-100 py-4 md:py-12">
       <div className="max-container padding-x">
         <div className="flex flex-col gap-2 sm:gap-4 pt-2 max-w-full sm:max-w-[680px]">
           <h2 className="text-secondary font-bold font-poppins uppercase text-2xl">
@@ -21,6 +21,7 @@ const Copyright = () => {
             information in accordance with this Privacy Policy. This Privacy
             Policy has been created with the help of the{' '}
             <a
+              aria-label="privacy link"
               className="font-semibold text-primary"
               href="https://www.termsfeed.com/privacy-policy-generator/"
               target="_blank"
