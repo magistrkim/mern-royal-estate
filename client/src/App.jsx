@@ -1,20 +1,20 @@
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Profile from './pages/Profile';
-import Signin from './pages/Signin';
-import Signup from './pages/Signup';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PrivateRoute from './components/PrivateRoute';
 import Loader from './components/Loader';
-import CreateListing from './pages/CreateListing';
-import UpdateListing from './pages/UpdateListing';
-import Listing from './pages/Listing';
-import Search from './pages/Search';
-import Terms from './pages/Terms';
-import Copyright from './pages/Copyright';
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Profile = lazy(() => import('./pages/Profile'));
+const Signin = lazy(() => import('./pages/Signin'));
+const Signup = lazy(() => import('./pages/Signup'));
+const CreateListing = lazy(() => import('./pages/CreateListing'));
+const UpdateListing = lazy(() => import('./pages/UpdateListing'));
+const Listing = lazy(() => import('./pages/Listing'));
+const Search = lazy(() => import('./pages/Search'));
+const Terms = lazy(() => import('./pages/Terms'));
+const Copyright = lazy(() => import('./pages/Copyright'));
 
 const App = () => {
   return (
