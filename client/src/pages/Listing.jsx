@@ -60,13 +60,17 @@ const Listing = () => {
           <Swiper navigation>
             {listing.imageUrls.map(url => (
               <SwiperSlide key={url}>
-                <div
-                  className="h-[650px]"
+                <img
+                  srcSet={`${url} 1920w, ${url} 1280w, ${url} 640w`}
+                  sizes="(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px"
+                  alt="slider image"
                   style={{
-                    background: `url(${url}) center no-repeat`,
-                    backgroundSize: 'cover',
+                    objectFit: 'cover',
+                    width: '100%',
+                    height: '600px',
+                    background: 'center',
                   }}
-                ></div>
+                />
               </SwiperSlide>
             ))}
           </Swiper>

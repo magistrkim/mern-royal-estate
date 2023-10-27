@@ -52,13 +52,18 @@ const Home = () => {
           offerListings.length > 0 &&
           offerListings.map(listing => (
             <SwiperSlide key={listing._id}>
-              <div
+              <img
+                srcSet={`${listing.imageUrls[0]}?w=640 640w, ${listing.imageUrls[0]}?w=1280 1280w, ${listing.imageUrls[0]}?w=1920 1920w`}
+                sizes="(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px"
+                src={listing.imageUrls[0]}
+                alt="slider image"
                 style={{
-                  background: `url(${listing.imageUrls[0]}) center no-repeat`,
-                  backgroundSize: 'cover',
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '480px',
+                  zIndex: 10,
                 }}
-                className="h-[320px] sm:h-[480px] z-10"
-              ></div>
+              />
             </SwiperSlide>
           ))}
       </Swiper>
