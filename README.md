@@ -1,21 +1,23 @@
 # Royal-Estate
 <a>https://r-estate.onrender.com/</a>
-![Alt text](<Снимок экрана (134).jpg>)
+![Снимок экрана (134)](https://github.com/magistrkim/mern-royal-estate/assets/115700340/272e6a22-d278-4dd0-9844-5509b3b0f933)
+
 
 ## Features 
 -   Real estate website provides secure authorization and convenient Google authentication for user access.<br>
-![Alt text](<Снимок экрана (138).jpg>)
+![Снимок экрана (138)](https://github.com/magistrkim/mern-royal-estate/assets/115700340/d7422935-2fdf-4ee7-9add-21b8cb380982)
 
 
 -    Users can easily create and update their profiles, as well as add or modify their apartment listings for rent or sale.<br>
-![Alt text](<Снимок экрана (135).jpg>)
+![Снимок экрана (135)](https://github.com/magistrkim/mern-royal-estate/assets/115700340/648364fd-afcd-4aea-a3fb-0bbe912fbed8)
 
 
 -    Ability to add or update your own listings of apartments or to choose house for rent or sale.<br>
-![Alt text](<Снимок экрана (136).jpg>)
+![Снимок экрана (136)](https://github.com/magistrkim/mern-royal-estate/assets/115700340/cac0ff7d-8e3c-465a-bca3-47e25eb0bd2c)
+
 
 -    The platform offers intuitive filtering options to refine property searches based on specific criteria.<br>
-![Alt text](<Снимок экрана (140).jpg>)
+![Снимок экрана (140)](https://github.com/magistrkim/mern-royal-estate/assets/115700340/279ae666-af7d-4a5c-aaf3-e2e6a5a7003f)
 
 
 -   Furthermore, our integrated email feature facilitates direct communication between tenants and landlords.
