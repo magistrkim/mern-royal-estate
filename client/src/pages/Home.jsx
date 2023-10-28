@@ -68,7 +68,7 @@ const Home = () => {
             </SwiperSlide>
           ))}
       </Swiper>
-      <div className="max-container padding-x py-20">
+      <div className="max-container padding-x py-10 pb-20">
         <div className="flex flex-col gap-4 sm:gap-8 pt-2 max-w-full sm:max-w-[480px]">
           <h1 className="text-secondary font-bold font-poppins uppercase text-2xl md:text-4xl">
             Find your <span className="text-primary">royal </span>
