@@ -43,7 +43,8 @@ The project is built using the following technologies and libraries:
 Welcome to our innovative real estate platform, where finding your ideal living space is made effortless. With user-friendly authorization and Google authentication, managing your profile and property listings becomes seamless. Explore a diverse range of apartments for rent or sale, utilizing our advanced filtering system to discover properties that align perfectly with your preferences. Stay connected with landlords through our integrated email feature, simplifying communication and ensuring a smooth rental or purchase process. Begin your journey towards finding your dream home with us today!
 
 
-
+<a>https://www.linkedin.com/in/nataliya-kachor-522170271/
+</a>
 
 <span align="center"> 
  
